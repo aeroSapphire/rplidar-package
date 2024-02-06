@@ -4,9 +4,7 @@ project(rplidar-simple-example)
 
 add_subdirectory(rplidar_sdk)
 
-include_directories(
-    ${RPLIDARSDK_INCLUDE_DIRS}
-)
+include_directories(${RPLIDARSDK_INCLUDE_DIRS})
 
 add_executable(${PROJECT_NAME}
     main.cpp
@@ -15,3 +13,4 @@ add_executable(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
     rplidarsdk
 )
+

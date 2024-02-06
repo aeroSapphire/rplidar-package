@@ -23,4 +23,11 @@ add_library(${PROJECT_NAME} STATIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_async_transceiver.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_tcp_channel.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_udp_channel.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/dataunpacker/dataunpacker.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/dataunpacker/unpacker/handler_capsules.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/dataunpacker/unpacker/handler_hqnode.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/dataunpacker/unpacker/handler_normalnode.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/arch/linux/timer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/arch/linux/net_socket.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/arch/linux/net_serial.cpp
 )
