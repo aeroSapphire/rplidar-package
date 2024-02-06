@@ -15,12 +15,12 @@ include_directories(${RPLIDARSDK_INCLUDE_DIRS})
 
 # Add target as a static library
 add_library(${PROJECT_NAME} STATIC
-    src/sl_lidar_driver.cpp
-    src/hal/thread.cpp
-    src/sl_crc.cpp
-    src/sl_serial_channel.cpp
-    src/sl_lidarprotocol_codec.cpp
-    src/sl_async_transceiver.cpp
-    src/sl_tcp_channel.cpp
-    src/sl_udp_channel.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_lidar_driver.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/hal/thread.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_crc.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_serial_channel.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_lidarprotocol_codec.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_async_transceiver.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_tcp_channel.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sl_udp_channel.cpp
 )
